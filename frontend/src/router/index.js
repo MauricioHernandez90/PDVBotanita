@@ -8,6 +8,7 @@ import RegisterView from '../views/RegisterView.vue'
 import UsersView from '../views/UsersView.vue'
 import ProductsView from '../views/ProductsView.vue'
 import CategoriesView from '../views/CategoriesView.vue'
+import InventoryView from '../views/InventoryView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +18,7 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomeView },
     { path: '/productos', name: 'productos', component: ProductsView },
     { path: '/categorias', name: 'categorias', component: CategoriesView },
+    { path: '/inventario', name: 'inventario', component: InventoryView },
     { path: '/usuarios', name: 'usuarios', component: UsersView, meta: { soloAdmin: true } }
   ]
 })

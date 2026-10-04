@@ -8,7 +8,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav me-auto">
+       <ul class="navbar-nav me-auto">
   <li class="nav-item">
     <router-link class="nav-link" to="/"><i class="bi bi-house"></i> Inicio</router-link>
   </li>
@@ -20,6 +20,11 @@
   <li class="nav-item">
     <router-link class="nav-link" to="/categorias">
       <i class="bi bi-tags"></i> Categorías
+    </router-link>
+  </li>
+  <li class="nav-item">
+    <router-link class="nav-link" to="/inventario">
+      <i class="bi bi-boxes"></i> Inventario
     </router-link>
   </li>
   <li v-if="auth.isAdmin" class="nav-item">

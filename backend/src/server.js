@@ -7,6 +7,7 @@ import authRoutes from './routes/auth.routes.js'
 import userRoutes from './routes/user.routes.js'
 import categoryRoutes from './routes/category.routes.js'
 import productRoutes from './routes/product.routes.js'
+import inventoryRoutes from './routes/inventory.routes.js'
 
 // Cargar variables de entorno
 dotenv.config()
@@ -35,6 +36,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/categories', categoryRoutes)
 app.use('/api/products', productRoutes)
+app.use('/api/inventory', inventoryRoutes)
 
 const PORT = process.env.PORT || 3000
 
