@@ -1,0 +1,18 @@
+/* src/assets/main.css */
+
+/* Variables de marca de La Botanita */
+:root {
+  --color-primario: #d97706;
+  --color-secundario: #16a34a;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Botones grandes para uso táctil (útil en el POS) */
+.btn-touch {
+  min-height: 80px;
+  font-size: 1.2rem;
+}

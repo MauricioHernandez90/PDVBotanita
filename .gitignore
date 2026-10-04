@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+*/node_modules/
+
+# Builds
+dist/
+*/dist/
+
+# Variables de entorno
+.env
+*.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Capacitor (futuro)
+android/
+ios/
