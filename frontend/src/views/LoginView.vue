@@ -2,11 +2,11 @@
   <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card shadow-lg" style="max-width: 420px; width: 100%;">
       <div class="card-body p-4">
-        <div class="text-center mb-4">
-          <i class="bi bi-shop display-4 text-warning"></i>
-          <h2 class="mt-2">La Botanita</h2>
-          <p class="text-muted">Inicia sesión para continuar</p>
-        </div>
+<div class="text-center mb-4">
+  <img :src="logoUrl" alt="La Botanita" class="login-logo" />
+  <h2 class="mt-3">La Botanita</h2>
+  <p class="text-muted">Inicia sesión para continuar</p>
+</div>
 
         <form @submit.prevent="handleLogin">
           <div class="form-floating mb-3">
@@ -44,6 +44,7 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
+import logoUrl from '../assets/logoscript.png'
 
 const router = useRouter()
 const auth = useAuthStore()
@@ -66,3 +67,12 @@ const handleLogin = async () => {
   }
 }
 </script>
+
+<style scoped>
+.login-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+</style>

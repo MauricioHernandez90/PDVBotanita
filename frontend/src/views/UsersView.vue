@@ -97,7 +97,7 @@ import { ref, onMounted } from 'vue'
 import { useAuthStore } from '../stores/auth'
 
 const auth = useAuthStore()
-const API_URL = 'http://localhost:3000/api'
+import { API_URL } from '../config/api'
 
 const usuarios = ref([])
 const cargando = ref(false)

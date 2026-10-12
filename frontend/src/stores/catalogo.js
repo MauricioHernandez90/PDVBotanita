@@ -2,7 +2,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-const API_URL = 'http://localhost:3000/api'
+import { API_URL } from '../config/api'
 
 export const useCatalogoStore = defineStore('catalogo', () => {
   const categorias = ref([])
